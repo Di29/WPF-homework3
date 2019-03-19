@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextEditor", "HomeWork3\TextEditor.csproj", "{D6FCED33-4024-4BD2-B35E-2A98B4CEBA13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserColor", "UserColor\UserColor.csproj", "{00BF1963-F903-4BE7-BB82-E3856BBE5D55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClickMe", "ClickMe\ClickMe.csproj", "{4FC8BBCA-8EEB-4751-AE3D-FFF444223CE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6FCED33-4024-4BD2-B35E-2A98B4CEBA13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6FCED33-4024-4BD2-B35E-2A98B4CEBA13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6FCED33-4024-4BD2-B35E-2A98B4CEBA13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6FCED33-4024-4BD2-B35E-2A98B4CEBA13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00BF1963-F903-4BE7-BB82-E3856BBE5D55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00BF1963-F903-4BE7-BB82-E3856BBE5D55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00BF1963-F903-4BE7-BB82-E3856BBE5D55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00BF1963-F903-4BE7-BB82-E3856BBE5D55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FC8BBCA-8EEB-4751-AE3D-FFF444223CE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FC8BBCA-8EEB-4751-AE3D-FFF444223CE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FC8BBCA-8EEB-4751-AE3D-FFF444223CE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FC8BBCA-8EEB-4751-AE3D-FFF444223CE6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A7EEDC4-CCF7-447B-AF8C-CAB5613E39F2}
+	EndGlobalSection
+EndGlobal

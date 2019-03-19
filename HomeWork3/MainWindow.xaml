@@ -1,0 +1,134 @@
+﻿<Window x:Class="HomeWork3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HomeWork3"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Medium"
+        TextElement.FontSize="14"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
+        Title="MainWindow" Height="450" Width="1000">
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Open" Executed="OpenExecuted" />
+        <CommandBinding Command="ApplicationCommands.Save" Executed="SaveExecuted" />
+    </Window.CommandBindings>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Menu Height="40" Grid.Row="0"
+  IsMainMenu="True">
+            <MenuItem
+    Header="_File">
+                <MenuItem
+      Header="Open" Command = "ApplicationCommands.Open">
+                    <MenuItem.Icon>
+                        <materialDesign:PackIcon
+          Kind="FolderOpen" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem
+      Header="Save" Command = "ApplicationCommands.Save">
+                    <MenuItem.Icon>
+                        <materialDesign:PackIcon
+          Kind="ContentSave" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem
+      Header="Save As.." />
+                <MenuItem
+      Header="Exit"
+      InputGestureText="Ctrl+E">
+                    <MenuItem.Icon>
+                        <materialDesign:PackIcon
+          Kind="ExitToApp" />
+                    </MenuItem.Icon>
+                </MenuItem>
+               
+            </MenuItem>
+                
+            <MenuItem
+    Header="_Edit">
+                <MenuItem
+      Header="_Cut"
+      Command="Cut">
+                    <MenuItem.Icon>
+                        <materialDesign:PackIcon
+          Kind="ContentCut" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem
+      Header="_Copy"
+      Command="Copy">
+                    <MenuItem.Icon>
+                        <materialDesign:PackIcon
+          Kind="ContentCopy" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem
+      Header="_Paste"
+      Command="Paste">
+                    <MenuItem.Icon>
+                        <materialDesign:PackIcon
+          Kind="ContentPaste" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+
+        <ToolBarTray Grid.Row="1">
+            <ToolBar
+    Style="{DynamicResource MaterialDesignToolBar}"
+    ClipToBounds="False">
+                
+                <Button
+      ToolTip="Save">
+                    <materialDesign:PackIcon
+        Kind="ContentSave" />
+                </Button>
+                <Separator />
+                <Button
+      Command="Cut"
+      ToolTip="Cut"
+      ToolBar.OverflowMode="AsNeeded">
+                    <materialDesign:PackIcon
+        Kind="ContentCut" />
+                </Button>
+                <Button
+      Command="Copy"
+      ToolTip="Copy that stuff"
+      ToolBar.OverflowMode="AsNeeded">
+                    <materialDesign:PackIcon
+        Kind="ContentCopy" />
+                </Button>
+                <Separator />
+                <Button
+      Command="Paste"
+      ToolTip="Paste some stuff"
+      ToolBar.OverflowMode="AsNeeded">
+                    <materialDesign:PackIcon
+        Kind="ContentPaste" />
+                </Button>
+                <Separator />
+            </ToolBar>
+        </ToolBarTray>
+
+        <RichTextBox Name="s" Grid.Row="2" Margin="5 0 5 0"
+    MinWidth="280"
+    VerticalAlignment="Top"
+    AcceptsReturn="True"
+    VerticalScrollBarVisibility="Auto"
+    SpellCheck.IsEnabled="True"
+    materialDesign:HintAssist.Hint="Multiline text">
+        </RichTextBox>
+
+    </Grid>
+</Window>
